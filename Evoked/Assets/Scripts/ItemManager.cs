@@ -22,7 +22,7 @@ public class ItemManager : MonoBehaviour
 
     [Header("GunParts")]
     public int eclipseEnforcerParts;
-    public int phantomwhisperParts;
+    public int phantomWhisperParts;
     public int cobaltSentinelParts;
     public int zenithDefenderParts;
     public int emberGuardianParts;
@@ -30,7 +30,7 @@ public class ItemManager : MonoBehaviour
 
     [Header("GunPartsNeeded")]
     public int eclipseEnforcerPartsNeeded;
-    public int phantomwhisperPartsNeeded;
+    public int phantomWhisperPartsNeeded;
     public int cobaltSentinelPartsNeeded;
     public int zenithDefenderPartsNeeded;
     public int emberGuardianPartsNeeded;

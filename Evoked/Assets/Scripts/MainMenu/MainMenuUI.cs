@@ -6,6 +6,7 @@ using UnityEngine;
 public class MainMenuUI : MonoBehaviour
 {
     public GameObject[] Pages;
+    public GameObject[] BackGeound;
     public bool OpenMission;
 
     public void TogglePages(int indexToEnable)
@@ -13,7 +14,8 @@ public class MainMenuUI : MonoBehaviour
         for (int i = 0; i < Pages.Length; i++)
         {
             Pages[i].SetActive(indexToEnable == i);
-            if(indexToEnable == 1)
+            BackGeound[i].SetActive(indexToEnable == i);
+            if (indexToEnable == 1)
             { OpenMission = true; }
         }
     }
