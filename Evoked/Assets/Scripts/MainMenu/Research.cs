@@ -8,7 +8,8 @@ public class Research : MonoBehaviour
     ItemManager IM;
     public GameObject mainManger;
     [Space]
-    public GameObject[] Pages;
+    public GameObject[] Pages; 
+    public GameObject[] Sidebar;
     [Space]
     public TMP_Text[] Text;
     public GameObject[] MainLocks;
@@ -20,6 +21,14 @@ public class Research : MonoBehaviour
         for (int i = 0; i < Pages.Length; i++)
         {
             Pages[i].SetActive(indexToEnable == i);
+        }
+    }
+
+    public void ToggleSidebar(int indexToEnable)
+    {
+        for (int i = 0; i < Sidebar.Length; i++)
+        {
+            Sidebar[i].SetActive(indexToEnable == i);
         }
     }
 
@@ -53,6 +62,7 @@ public class Research : MonoBehaviour
             Destroy(SecondLocks[0]);
             IM.eclipseEnforcerParts -= IM.eclipseEnforcerPartsNeeded;
             IM.eclipseEnforcerPartsNeeded += 5;
+            IM.eclipseEnforcerLevel += 1;
             IM.xp += 50;
         }
     }
@@ -66,6 +76,7 @@ public class Research : MonoBehaviour
             Destroy(SecondLocks[1]);
             IM.phantomWhisperParts -= IM.phantomWhisperPartsNeeded;
             IM.phantomWhisperPartsNeeded += 5;
+            IM.phantomWhisperLevel += 1;
             IM.xp += 50;
         }
     }
@@ -79,6 +90,7 @@ public class Research : MonoBehaviour
             Destroy(SecondLocks[2]);
             IM.cobaltSentinelParts -= IM.cobaltSentinelPartsNeeded;
             IM.cobaltSentinelPartsNeeded += 5;
+            IM.cobaltSentinelLevel += 1;
             IM.xp += 50;
         }
     }
@@ -92,6 +104,7 @@ public class Research : MonoBehaviour
             Destroy(SecondLocks[3]);
             IM.zenithDefenderParts -= IM.zenithDefenderPartsNeeded;
             IM.zenithDefenderPartsNeeded += 5;
+            IM.zenithDefenderLevel += 1;
             IM.xp += 50;
         }
     }
@@ -104,10 +117,11 @@ public class Research : MonoBehaviour
             Destroy(SecondLocks[4]);
             IM.emberGuardianParts -= IM.emberGuardianPartsNeeded;
             IM.emberGuardianPartsNeeded += 5;
+            IM.emberGuardianLevel += 1;
             IM.xp += 50;
         }
     }
-    public void ResearchNebulaHavocParts()
+    public void ResearchNebulaHavoc()
     {
         if (IM.nebulaHavocParts >= IM.nebulaHavocPartsNeeded)
         {
@@ -116,6 +130,7 @@ public class Research : MonoBehaviour
             Destroy(SecondLocks[5]);
             IM.nebulaHavocParts -= IM.nebulaHavocPartsNeeded;
             IM.nebulaHavocPartsNeeded += 5;
+            IM.nebulaHavocLevel += 1;
             IM.xp += 50;
         }
     }

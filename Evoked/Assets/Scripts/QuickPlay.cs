@@ -8,7 +8,7 @@ public class QuickPlay : MonoBehaviour
     public GameObject MainMenu;
     [Space]
     public GameObject[] Maps;
-
+    [Space]
     public GameObject[] MainGuns;
     public GameObject[] SecondGuns;
 

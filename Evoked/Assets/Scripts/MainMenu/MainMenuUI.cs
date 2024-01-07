@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 
 public class MainMenuUI : MonoBehaviour
 {
+
+    ItemManager IM;
+    public GameObject mainManger;
+    [Space]
+    public TMP_Text GoldBars;
+    [Space]
     public GameObject[] Pages;
     public GameObject[] BackGeound;
+
     public bool OpenMission;
 
     public void TogglePages(int indexToEnable)
@@ -22,12 +29,11 @@ public class MainMenuUI : MonoBehaviour
 
     void Start()
     {
-        
+        IM = mainManger.GetComponent<ItemManager>();
     }
 
-  
     void Update()
     {
-        
+        GoldBars.text = "Gold Bar: " + IM.goldBar + " ";
     }
 }
