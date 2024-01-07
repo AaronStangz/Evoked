@@ -17,6 +17,9 @@ public class Armory : MonoBehaviour
     [Space]
     public TMP_Text[] TextMain;
     public TMP_Text[] TextSecond;
+    [Space]
+    public GameObject[] EquipedUIMain;
+    public GameObject[] EquipedUISecond;
 
     public void TogglePages(int indexToEnable)
     {
@@ -31,6 +34,22 @@ public class Armory : MonoBehaviour
         for (int i = 0; i < Sidebar.Length; i++)
         {
             Sidebar[i].SetActive(indexToEnable == i);
+        }
+    }
+
+    public void ToggleEquipedUIMain(int indexToEnable)
+    {
+        for (int i = 0; i < EquipedUIMain.Length; i++)
+        {
+            EquipedUIMain[i].SetActive(indexToEnable == i);
+        }
+    }
+
+    public void ToggleEquipedUISecond(int indexToEnable)
+    {
+        for (int i = 0; i < EquipedUISecond.Length; i++)
+        {
+            EquipedUISecond[i].SetActive(indexToEnable == i);
         }
     }
 

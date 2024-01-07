@@ -11,7 +11,8 @@ public class Research : MonoBehaviour
     public GameObject[] Pages; 
     public GameObject[] Sidebar;
     [Space]
-    public TMP_Text[] Text;
+    public TMP_Text[] PartsText;
+    public TMP_Text[] LevelText;
     public GameObject[] MainLocks;
     public GameObject[] SecondLocks;
 
@@ -45,12 +46,19 @@ public class Research : MonoBehaviour
 
     public void ResearchPartsTexts()
     {
-        Text[0].text = "Parts: " + IM.eclipseEnforcerParts + " / " + IM.eclipseEnforcerPartsNeeded + " ";
-        Text[1].text = "Parts: " + IM.phantomWhisperParts + " / " + IM.phantomWhisperPartsNeeded + " ";
-        Text[2].text = "Parts: " + IM.cobaltSentinelParts + " / " + IM.cobaltSentinelPartsNeeded + " ";
-        Text[3].text = "Parts: " + IM.zenithDefenderParts + " / " + IM.zenithDefenderPartsNeeded + " ";
-        Text[4].text = "Parts: " + IM.emberGuardianParts + " / " + IM.emberGuardianPartsNeeded + " ";
-        Text[5].text = "Parts: " + IM.nebulaHavocParts + " / " + IM.nebulaHavocPartsNeeded + " ";
+        PartsText[0].text = "Parts: " + IM.eclipseEnforcerParts + " / " + IM.eclipseEnforcerPartsNeeded + " ";
+        PartsText[1].text = "Parts: " + IM.phantomWhisperParts + " / " + IM.phantomWhisperPartsNeeded + " ";
+        PartsText[2].text = "Parts: " + IM.cobaltSentinelParts + " / " + IM.cobaltSentinelPartsNeeded + " ";
+        PartsText[3].text = "Parts: " + IM.zenithDefenderParts + " / " + IM.zenithDefenderPartsNeeded + " ";
+        PartsText[4].text = "Parts: " + IM.emberGuardianParts + " / " + IM.emberGuardianPartsNeeded + " ";
+        PartsText[5].text = "Parts: " + IM.nebulaHavocParts + " / " + IM.nebulaHavocPartsNeeded + " ";
+
+        LevelText[0].text = "Weapon Level: " + IM.eclipseEnforcerLevel + " ";
+        LevelText[1].text = "Weapon Level: " + IM.phantomWhisperLevel + " ";
+        LevelText[2].text = "Weapon Level: " + IM.cobaltSentinelLevel + " ";
+        LevelText[3].text = "Weapon Level: " + IM.zenithDefenderLevel + " ";
+        LevelText[4].text = "Weapon Level: " + IM.emberGuardianLevel + " ";
+        LevelText[5].text = "Weapon Level: " + IM.nebulaHavocLevel + " ";
     }
 
     public void ResearchEclipseEnforcer()

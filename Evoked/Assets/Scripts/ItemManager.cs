@@ -7,6 +7,7 @@ public class ItemManager : MonoBehaviour
     [Header("Mats")]
     public int wood;
     public int scrap;
+    public int upgradePoints;
     public int goldBar;
 
     [Header("Story Items")]
