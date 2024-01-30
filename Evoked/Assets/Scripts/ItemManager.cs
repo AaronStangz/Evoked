@@ -10,13 +10,26 @@ public class ItemManager : MonoBehaviour
     public int upgradePoints;
     public int goldBar;
 
+    [Header("Mats")]
+    public int MaxWood;
+    public int MaxScrap;
+
     [Header("Story Items")]
     public int files;
 
     [Header("ammo")]
-    public int arAmmo;
-    public int smgAmmo;
-    public int shotgunAmmo;
+    public int MediumBullets;
+    public int LightBullets;
+    public int Shells;
+    public int HeavyBullets;
+    public int Rockets;
+
+    [Header("MaxAmmo")]
+    public int MaxMediumBullets;
+    public int MaxLightBullets;
+    public int MaxShells;
+    public int MaxHeavyBullets;
+    public int MaxRockets;
 
     [Header("Gun Blue Prints")]
     public int eclipseEnforcerBluePrints;
@@ -36,12 +49,22 @@ public class ItemManager : MonoBehaviour
 
     [Header("Gun Levels / xp;")]
     public int xp;
+    public int gunXp;
+    public int heroXp;
+    [Space]
     public int eclipseEnforcerLevel;
     public int phantomWhisperLevel;
     public int cobaltSentinelLevel;
     public int zenithDefenderLevel;
     public int emberGuardianLevel;
     public int nebulaHavocLevel;
+    [Space]
+    public int eclipseEnforcerGunXP;
+    public int phantomWhisperGunXP;
+    public int cobaltSentinelGunXP;
+    public int zenithDefenderGunXP;
+    public int emberGuardianGunXP;
+    public int nebulaHavocGunXP;
 
 
     [Header("Gun Part sNeeded")]
